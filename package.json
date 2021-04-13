@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kostadin97/MERNStore.git"
+  },
+  "keywords": [],
+  "author": "Kostadin Seymenski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kostadin97/MERNStore/issues"
+  },
+  "homepage": "https://github.com/Kostadin97/MERNStore#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
