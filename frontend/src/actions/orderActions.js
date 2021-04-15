@@ -60,19 +60,20 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post(`/api/orders${id}`, config);
+    const { data } = await axios.get(`/api/orders/${id}`, config);
 
     dispatch({
       type: ORDER_DETAILS_SUCCESS,
       payload: data,
     });
   } catch (error) {
+    const message =
+      error.response && error.response.data.message
+        ? error.response.data.message
+        : error.message;
     dispatch({
       type: ORDER_DETAILS_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload: message,
     });
   }
 };
