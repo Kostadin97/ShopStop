@@ -1,4 +1,4 @@
-# MERNStore
+# ShopStop
 MERN eCommerce Single Page Application
 
 ## Features
